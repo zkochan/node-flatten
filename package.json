@@ -9,11 +9,15 @@
   },
   "main": "./index.js",
   "scripts": {
-    "test": "node ./test.js"
+    "test-md": "mos test",
+    "test": "node ./test.js && npm run test-md",
+    "md-update": "mos"
   },
   "license": "MIT",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "mos": "0.2.3"
+  },
   "optionalDependencies": {},
   "engines": {
     "node": "*"
